@@ -37,9 +37,8 @@ public class playerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
             jumpVel = jumpSpeed;
-            //fixen
             rb.velocity = new Vector2(actualSpeed, rb.velocity.y + jumpVel);
-        }
+        } 
         if (isGrounded == false) anime.SetBool("pJump", true);
         if (isGrounded == true) anime.SetBool("pJump", false);
     }

@@ -1,19 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuHandler : MonoBehaviour
 {
-    public GameObject Panel;
-
-    public void openPanel()
+    public void gotolevelmenu()
     {
-        if (Panel != null)
-        {
-            bool isActive = Panel.activeSelf;
+        SceneManager.LoadScene("LevelScene");
+    }
 
-            Panel.SetActive(!isActive);
-
-        }
+    public void quitgame()
+    {
+        Application.Quit();
     }
 }

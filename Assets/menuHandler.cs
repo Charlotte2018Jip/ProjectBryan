@@ -9,4 +9,9 @@ public class menuHandler : MonoBehaviour
     {
         SceneManager.LoadScene("LevelScene");
     }
+
+    public void quitgame()
+    {
+        Application.Quit();
+    }
 }

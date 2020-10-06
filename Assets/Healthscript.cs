@@ -12,6 +12,7 @@ public class Healthscript : MonoBehaviour
 
     private void Start()
     {
+        hearts.SetValue(1, 1, 1);
         life = hearts.Length;
     }
 

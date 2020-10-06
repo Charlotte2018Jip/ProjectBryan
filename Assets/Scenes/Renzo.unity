@@ -1238,6 +1238,16 @@ PrefabInstance:
     - target: {fileID: 2448218776878649215, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
       propertyPath: m_Offset.x
+      value: 0.00308582
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448218776878649215, guid: 69d91580b11d4204fab9fb7dfd5233c1,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.12145576
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448218776878649215, guid: 69d91580b11d4204fab9fb7dfd5233c1,
+        type: 3}
+      propertyPath: m_Offset.x
       value: 0.0021205144
       objectReference: {fileID: 0}
     - target: {fileID: 2448218776878649215, guid: 69d91580b11d4204fab9fb7dfd5233c1,

@@ -42,4 +42,13 @@ public class grounded : MonoBehaviour
         }
     }
 
+    public void onCollisionHit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "kill point")
+        {
+            FindObjectOfType<Healthscript>().RemoveLife();
+        }
+        //Remove a life 
+
+    }
 }

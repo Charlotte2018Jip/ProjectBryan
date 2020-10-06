@@ -40,5 +40,4 @@ public class grounded : MonoBehaviour
             Player.GetComponent<playerController>().isGrounded = false;
         }
     }
-
 }

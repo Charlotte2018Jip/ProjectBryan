@@ -16,14 +16,4 @@ public class respawn : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider hit )
-    {
-        
-        if (hit.transform.CompareTag("kill point"))
-        {
-            FindObjectOfType<Healthscript>().RemoveLife();
-        }
-        //Remove a life 
-       
-    }
 }

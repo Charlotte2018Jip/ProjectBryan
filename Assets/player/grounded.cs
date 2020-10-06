@@ -40,14 +40,4 @@ public class grounded : MonoBehaviour
             Player.GetComponent<playerController>().isGrounded = false;
         }
     }
-
-    public void onCollisionHit2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "kill point")
-        {
-            FindObjectOfType<Healthscript>().RemoveLife();
-        }
-        //Remove a life 
-
-    }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class playerController : MonoBehaviour
@@ -82,16 +83,5 @@ public class playerController : MonoBehaviour
         {
             isGrounded = false;
         }
-    }
-
-    public void onCollisionHit2D(Collision2D collision)
-    {
-
-        if (collision.collider.tag == "kill point")
-        {
-            FindObjectOfType<Healthscript>().RemoveLife();
-        }
-        //Remove a life 
-
     }
 }

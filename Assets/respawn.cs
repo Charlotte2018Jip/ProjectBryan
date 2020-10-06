@@ -14,4 +14,13 @@ public class respawn : MonoBehaviour
             col.transform.position = spawnPoint.position;
         }
     }
+
+    public void Hit(Vector3 hitCoordinates)
+    {
+        //Create an explosion on the coordinates of the hit. 
+        Instantiate(spawnPoint, hitCoordinates, Quaternion.identity);
+
+        //Remove a life 
+        FindObjectOfType<Healthscript>().RemoveLife();
+    }
 }

@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class respawn : MonoBehaviour
 {
@@ -14,13 +16,7 @@ public class respawn : MonoBehaviour
             col.transform.position = spawnPoint.position;
         }
     }
+    
 
-    public void Hit(Vector3 hitCoordinates)
-    {
-        //Create an explosion on the coordinates of the hit. 
-        Instantiate(spawnPoint, hitCoordinates, Quaternion.identity);
-
-        //Remove a life 
-        FindObjectOfType<Healthscript>().RemoveLife();
-    }
+   
 }

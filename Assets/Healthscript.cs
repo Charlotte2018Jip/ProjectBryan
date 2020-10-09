@@ -1,63 +1,46 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Healthscript : MonoBehaviour
 {
-    public int lives;
-    public int maxNumberofLives = 3;
+    public GameObject[] hearts;
+    
 
-    private GameObject[] hearts;
+    private int life;
+    private bool dead;
 
     private void Start()
     {
-        lives = maxNumberofLives;
+        life = hearts.Length;
 
-        hearts = new GameObject[maxNumberofLives];
-
-        for (int i = 0; i<maxNumberofLives; i++)
-        {
-            hearts[i] = transform.GetChild(i).gameObject;
-        }
     }
 
-    public void AddLife()
+    private void Update()
     {
-        lives++;
-
-        if(lives > maxNumberofLives)
+        if (dead == true)
         {
-            lives = maxNumberofLives;
+            Debug.Log("je bent dood");
         }
-
-        UpdateGraphics();
     }
 
-    public void RemoveLife()
+
+    public void takeDamage(int d)
     {
-        lives--;
-
-        if (lives <= 0)
+        if (life >= d)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("testscene");
-        }
-
-        UpdateGraphics();
-    }
-
-    public void UpdateGraphics()
-    { 
-        for (int i = 0; i < maxNumberofLives; i++)
-        {
-            if (i >= lives)
+            life -= 1;
+            Destroy(hearts[life].gameObject);
+            if (life < 1)
             {
-                hearts[i].SetActive(false);
-            }
-            else
-            {
-                hearts[i].SetActive(true);
+                {
+                    dead = true;
+                }
             }
         }
     }
+
+    
 }

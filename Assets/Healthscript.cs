@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class Healthscript : MonoBehaviour
 {
     public GameObject[] hearts;
+    
 
     private int life;
     private bool dead;
@@ -13,6 +15,7 @@ public class Healthscript : MonoBehaviour
     private void Start()
     {
         life = hearts.Length;
+
     }
 
     private void Update()
@@ -23,11 +26,12 @@ public class Healthscript : MonoBehaviour
         }
     }
 
+
     public void takeDamage(int d)
     {
-        if (life >= 1)
+        if (life >= d)
         {
-            life -= d;
+            life -= 1;
             Destroy(hearts[life].gameObject);
             if (life < 1)
             {
@@ -37,4 +41,6 @@ public class Healthscript : MonoBehaviour
             }
         }
     }
+
+    
 }

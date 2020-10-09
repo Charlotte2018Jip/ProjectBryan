@@ -27,6 +27,8 @@ public class grounded : MonoBehaviour
         {
             jump = true;
             Player.GetComponent<playerController>().isGrounded = true;
+
+
         }
         
     }
@@ -40,4 +42,5 @@ public class grounded : MonoBehaviour
             Player.GetComponent<playerController>().isGrounded = false;
         }
     }
+
 }

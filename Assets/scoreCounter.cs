@@ -7,9 +7,13 @@ public class scoreCounter : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform player;
+    GameObject Coin;
     public Text scoreText;
     private int score;
-
+    private void Start()
+    {
+        score = 0;
+    }
     private void Update()
     {
         scoreText.text = player.position.z.ToString("0");
@@ -17,9 +21,11 @@ public class scoreCounter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "coin")
+
+        int score = 0;
+        if (collision.gameObject.CompareTag( "Coin" )&& collision.gameObject.GetComponent<CircleCollider2D>().enabled) 
         {
-            collision.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
             score += 12;
             SetScore();
         }

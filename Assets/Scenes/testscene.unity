@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dfd96c967cf55c41ac987c4045e5b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 653057118}
+  Scoretext: {fileID: 653057118}
 --- !u!1 &547036800
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +715,8 @@ GameObject:
   - component: {fileID: 653057116}
   - component: {fileID: 653057119}
   - component: {fileID: 653057118}
-  m_Layer: 5
+  - component: {fileID: 653057117}
+  m_Layer: 0
   m_Name: scoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -741,6 +742,19 @@ RectTransform:
   m_AnchoredPosition: {x: -1.6000061, y: 3}
   m_SizeDelta: {x: 188.87018, y: 31.519836}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &653057117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653057115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dfd96c967cf55c41ac987c4045e5b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scoretext: {fileID: 653057118}
 --- !u!114 &653057118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,10 +1107,11 @@ GameObject:
   - component: {fileID: 961846771}
   - component: {fileID: 961846772}
   - component: {fileID: 961846773}
+  - component: {fileID: 961846774}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: 5ed5157cf45e6ee409511594fb89377b, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1108,7 +1123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961846770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -436.3704, y: -208.35973, z: 0}
+  m_LocalPosition: {x: -434.142, y: -208.303, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 134943352}
@@ -1181,6 +1196,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.08
+--- !u!114 &961846774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961846770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dfd96c967cf55c41ac987c4045e5b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scoretext: {fileID: 653057118}
 --- !u!1 &1211387398
 GameObject:
   m_ObjectHideFlags: 3

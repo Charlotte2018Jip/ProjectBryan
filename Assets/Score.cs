@@ -3,22 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scoreCounter : MonoBehaviour
+public class Score : MonoBehaviour
 {
     public static int score;
-    public Text scoreText;
+    public Text Scoretext;
     
 
     void Start()
     {
-        scoreText = GetComponent<Text>();
         score = 0;
+        Scoretext = GetComponent<Text>();
+
     }
-    void Update()
+
+    public void AddScore()
     {
+        score += 1;
+        Update();
 
-        scoreText.text = "Score: "  + score;
+
     }
 
-   
+    void Update() 
+    {
+        
+     Scoretext.text = "Score: " + score;
+        
+    }
+
 }

@@ -715,7 +715,6 @@ GameObject:
   - component: {fileID: 653057116}
   - component: {fileID: 653057119}
   - component: {fileID: 653057118}
-  - component: {fileID: 653057117}
   m_Layer: 5
   m_Name: scoreText
   m_TagString: Untagged
@@ -742,19 +741,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1.6000061, y: 3}
   m_SizeDelta: {x: 188.87018, y: 31.519836}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &653057117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653057115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dfd96c967cf55c41ac987c4045e5b7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 653057118}
 --- !u!114 &653057118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +774,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score
+  m_Text: 0
 --- !u!222 &653057119
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1106,7 +1092,6 @@ GameObject:
   m_Component:
   - component: {fileID: 961846771}
   - component: {fileID: 961846772}
-  - component: {fileID: 961846774}
   - component: {fileID: 961846773}
   m_Layer: 0
   m_Name: Coin
@@ -1196,19 +1181,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.08
---- !u!114 &961846774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961846770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dfd96c967cf55c41ac987c4045e5b7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 653057118}
 --- !u!1 &1211387398
 GameObject:
   m_ObjectHideFlags: 3

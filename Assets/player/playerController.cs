@@ -90,7 +90,7 @@ public class playerController : MonoBehaviour
         switch (collision.name)
         {
             case "Coin":
-                scoreCounter.score += 1;
+                Score.score += 1;
                 Destroy(collision.gameObject);
                 break;
         }

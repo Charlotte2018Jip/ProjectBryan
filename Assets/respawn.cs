@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class respawn : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
-
+    void Start()
+    {
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {

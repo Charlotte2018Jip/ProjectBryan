@@ -699,6 +699,16 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2448218776551667329, guid: 69d91580b11d4204fab9fb7dfd5233c1,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448218776551667329, guid: 69d91580b11d4204fab9fb7dfd5233c1,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2448218776551667331, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
       propertyPath: m_Name
@@ -896,6 +906,7 @@ GameObject:
   - component: {fileID: 961846772}
   - component: {fileID: 961846773}
   - component: {fileID: 961846774}
+  - component: {fileID: 961846775}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Player
@@ -911,7 +922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961846770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -434.142, y: -208.303, z: 0}
+  m_LocalPosition: {x: -296, y: -194.2, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 134943352}
@@ -997,6 +1008,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scoretext: {fileID: 653057118}
+--- !u!114 &961846775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961846770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9d1553e1f4b3d40b85187679bd107a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211387398
 GameObject:
   m_ObjectHideFlags: 3
@@ -1291,7 +1314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 547036801}
-  other: {fileID: 1649536584}
 --- !u!4 &1434493224
 Transform:
   m_ObjectHideFlags: 0

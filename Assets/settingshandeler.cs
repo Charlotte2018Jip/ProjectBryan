@@ -28,7 +28,7 @@ public class settingshandeler : MonoBehaviour
 
     public void gotolevel()
     {
-        SceneManager.LoadScene("IntroScene");
+        SceneManager.LoadScene("LevelScene");
     }
 
 }

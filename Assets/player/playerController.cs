@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class playerController : MonoBehaviour
@@ -24,7 +25,7 @@ public class playerController : MonoBehaviour
     }
     
 
-    void FixedUpdate()
+    void Update()
     {
         Run();
         Jump();
@@ -81,6 +82,17 @@ public class playerController : MonoBehaviour
         if (collision.collider.tag == "Ground")
         {
             isGrounded = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.name)
+        {
+            case "Coin":
+                Score.score += 1;
+                Destroy(collision.gameObject);
+                break;
         }
     }
 }

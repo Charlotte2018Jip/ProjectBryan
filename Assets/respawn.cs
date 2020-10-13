@@ -1,11 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class respawn : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
-
+    void Start()
+    {
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -14,4 +18,7 @@ public class respawn : MonoBehaviour
             col.transform.position = spawnPoint.position;
         }
     }
+    
+
+   
 }

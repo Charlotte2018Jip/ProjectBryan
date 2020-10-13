@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Renzo.unity
     guid: 1bd05098ecb21a149b6b7fc8aa622a6e
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 01c9b05592a66c74988fb42fc7f26bbf
+  - enabled: 1
+    path: Assets/Scenes/Lars.unity
+    guid: 60c6cdbebfecf524aa84396399e4c613
   m_configObjects: {}

@@ -12,7 +12,17 @@ public class LevelSelection : MonoBehaviour
     }
     public void gotolevel1()
     {
+        SceneManager.LoadScene("IntroScene");
+    }
+
+    public void gotolevel2()
+    {
         SceneManager.LoadScene("Renzo");
+    }
+
+    public void gotolevel3()
+    {
+        SceneManager.LoadScene("Lars");
     }
 
 }

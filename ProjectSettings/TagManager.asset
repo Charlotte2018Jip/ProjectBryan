@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [powerup, Button, Death]
+  tags:
+  - powerup
+  - Button
+  - Death
   layers:
   - Default
   - TransparentFX

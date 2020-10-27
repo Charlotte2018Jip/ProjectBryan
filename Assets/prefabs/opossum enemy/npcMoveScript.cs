@@ -8,6 +8,8 @@ public class npcMoveScript : MonoBehaviour
 
     private Rigidbody2D myRigidbody;
 
+    private SpriteRenderer mySpriteRenderer;
+
     public bool isWalking;
 
     public float walkTime;
@@ -20,6 +22,8 @@ public class npcMoveScript : MonoBehaviour
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+
 
         waitCounter = waitTime;
         walkCounter = walkTime;
@@ -41,10 +45,12 @@ public class npcMoveScript : MonoBehaviour
                 
                 case 0:
                     myRigidbody.velocity = new Vector2( moveSpeed, 0);
+                    mySpriteRenderer.flipX = true;
                     break;
                
                 case 1:
                     myRigidbody.velocity = new Vector2(-moveSpeed, 0);
+                    mySpriteRenderer.flipX = false;
                     break;
 
             }
@@ -79,6 +85,13 @@ public class npcMoveScript : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
 
 

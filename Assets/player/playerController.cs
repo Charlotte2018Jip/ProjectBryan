@@ -87,12 +87,12 @@ public class playerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        switch (collision.name)
+        if (collision.gameObject.tag == "Coin")
         {
-            case "Coin":
-                Score.score += 1;
-                Destroy(collision.gameObject);
-                break;
+
+            Score.score += 1;
+            Destroy(collision.gameObject);
+
         }
     }
 }

@@ -11,7 +11,7 @@ public class changescene : MonoBehaviour
     {
         if (collision.tag == "Player" && gameObject.tag == "level0")
         {
-            SceneManager.LoadScene("1", LoadSceneMode.Single);
+            SceneManager.LoadScene("Renzo", LoadSceneMode.Single);
         }
         else if (collision.tag == "Player" && gameObject.tag == "level1")
         {

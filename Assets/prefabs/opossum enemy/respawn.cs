@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class respawn : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
+    public Healthscript killed;
     void Start()
     {
     }
@@ -16,6 +17,7 @@ public class respawn : MonoBehaviour
         if (col.transform.CompareTag("Player"))
         {
             col.transform.position = spawnPoint.position;
+            killed.killed = true;
         }
     }
     

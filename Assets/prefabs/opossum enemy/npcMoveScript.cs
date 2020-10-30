@@ -34,20 +34,20 @@ public class npcMoveScript : MonoBehaviour
 
     void Update()
     {
-        if(isWalking)
+        if (isWalking)
         {
             walkCounter -= Time.deltaTime;
 
-           
 
-            switch(WalkDirection)
+
+            switch (WalkDirection)
             {
-                
+
                 case 0:
-                    myRigidbody.velocity = new Vector2( moveSpeed, 0);
+                    myRigidbody.velocity = new Vector2(moveSpeed, 0);
                     mySpriteRenderer.flipX = true;
                     break;
-               
+
                 case 1:
                     myRigidbody.velocity = new Vector2(-moveSpeed, 0);
                     mySpriteRenderer.flipX = false;
@@ -68,7 +68,7 @@ public class npcMoveScript : MonoBehaviour
 
             myRigidbody.velocity = Vector2.zero;
 
-            if(waitCounter < 0)
+            if (waitCounter < 0)
             {
                 ChooseDirection();
             }
@@ -77,7 +77,7 @@ public class npcMoveScript : MonoBehaviour
 
     }
 
-    public void ChooseDirection ()
+    public void ChooseDirection()
     {
         WalkDirection = Random.Range(0, 2);
         isWalking = true;

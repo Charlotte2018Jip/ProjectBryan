@@ -9,13 +9,13 @@ public class powerup : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public playerController jumpboost;
+    public playerController jumpSpeed;
     public void OnTriggerEnter2D(Collider2D collision)
 {
         if (collision.tag == "Player")
         {
             Destroy(gameObject);
-            jumpboost.jumpSpeed = 500;
+            jumpSpeed.jumpSpeed = 10;
         }
     }
 }

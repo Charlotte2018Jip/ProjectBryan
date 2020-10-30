@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 93776280}
   - component: {fileID: 93776279}
   - component: {fileID: 93776277}
+  - component: {fileID: 93776278}
   m_Layer: 0
   m_Name: gem-5
   m_TagString: powerup
@@ -542,9 +543,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 93776276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a35fbe85309d09468ce9bf3508f8808, type: 3}
+  m_Script: {fileID: 11500000, guid: 783cda2a25c8a494393079454c6a74fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpboost: {fileID: 0}
+--- !u!61 &93776278
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93776276}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0007074848, y: 0.014779848}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.15, y: 0.13}
+    newSize: {x: 0.15, y: 0.13}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1033088, y: 0.028874667}
+  m_EdgeRadius: 0
 --- !u!212 &93776279
 SpriteRenderer:
   m_ObjectHideFlags: 0

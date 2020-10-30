@@ -74,6 +74,8 @@ public class playerController : MonoBehaviour
         {
             isGrounded = true;
         }
+
+       
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -95,4 +97,6 @@ public class playerController : MonoBehaviour
 
         }
     }
+
+    
 }

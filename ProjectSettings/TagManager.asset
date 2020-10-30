@@ -9,6 +9,7 @@ TagManager:
   - Death
   - Coin
   - level0
+  - Enemy
   - level1
   layers:
   - Default

@@ -10,6 +10,7 @@ public class ButtonLoad : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        print(GameManager.levels[1]);
         if (GameManager.levels[1] == true)
         {
             levelTwoButton.interactable = true;

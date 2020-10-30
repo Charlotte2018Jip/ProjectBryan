@@ -9,9 +9,17 @@ public class changescene : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && gameObject.tag == "level0")
         {
-            SceneManager.LoadScene("0", LoadSceneMode.Single);
+            SceneManager.LoadScene("1", LoadSceneMode.Single);
+        }
+        else if (collision.tag == "Player" && gameObject.tag == "level1")
+        {
+            SceneManager.LoadScene("2", LoadSceneMode.Single);
+        }
+        if (collision.tag == "Player" && gameObject.tag == "level3")
+        {
+            SceneManager.LoadScene("3", LoadSceneMode.Single);
         }
     }
 }

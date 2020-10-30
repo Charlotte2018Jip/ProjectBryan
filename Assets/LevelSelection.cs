@@ -9,7 +9,7 @@ public class LevelSelection : MonoBehaviour
     public void gotohome()
     {
 
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Home");
 
     }
     public void gotolevel1()

@@ -293,13 +293,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 3.319077, y: 6.741741}
-  - {x: 3.014454, y: 6.0408664}
-  - {x: 3.016298, y: 5.504733}
-  - {x: 3.6438208, y: 5.5047345}
-  - {x: 3.6305761, y: 6.025089}
-  - {x: 3.3254232, y: 6.7404156}
-  - {x: 3.319921, y: 6.7413177}
+  - {x: 3.3165998, y: 6.1221323}
+  - {x: 3.1574228, y: 5.7608247}
+  - {x: 3.2428708, y: 5.070374}
+  - {x: 3.299752, y: 4.8060317}
+  - {x: 3.5265808, y: 5.663962}
+  - {x: 3.3182607, y: 6.1266465}
+  - {x: 3.3077583, y: 5.1572647}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 321250238}
   m_Layer: 0
   m_Name: house
-  m_TagString: level1
+  m_TagString: level0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,7 +534,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.094999865, y: -0.37561324}
@@ -5724,7 +5724,7 @@ PrefabInstance:
     - target: {fileID: 2448218776551667329, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
       propertyPath: moveSpeed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2448218776551667330, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
@@ -5764,12 +5764,12 @@ PrefabInstance:
     - target: {fileID: 2448218776603061700, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.28
+      value: 40.92
       objectReference: {fileID: 0}
     - target: {fileID: 2448218776603061700, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 2448218776603061700, guid: 69d91580b11d4204fab9fb7dfd5233c1,
         type: 3}
@@ -5880,7 +5880,7 @@ GameObject:
   - component: {fileID: 775723531}
   m_Layer: 0
   m_Name: opossum-enemy (1)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6403,8 +6403,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111653986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.002, y: -4.423, z: 0}
-  m_LocalScale: {x: 6.284249, y: 1.0671164, z: 1}
+  m_LocalPosition: {x: 26.05, y: -4.423, z: 0}
+  m_LocalScale: {x: 6.208682, y: 1.0671164, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -6523,7 +6523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267918414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.28, y: 0.64, z: -10}
+  m_LocalPosition: {x: 40.92, y: 0.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 228953409}
@@ -6688,7 +6688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451446467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.364086, y: -0.76389456, z: 24.99245}
+  m_LocalPosition: {x: -8.364086, y: -1.37, z: 24.99245}
   m_LocalScale: {x: 2.038427, y: 2.80419, z: 1}
   m_Children: []
   m_Father: {fileID: 1267127692}
@@ -7066,7 +7066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937500306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.28, y: 0.64, z: -10}
+  m_LocalPosition: {x: 40.92, y: 0.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

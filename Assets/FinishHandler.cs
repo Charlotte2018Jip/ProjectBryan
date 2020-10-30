@@ -15,13 +15,20 @@ public class FinishHandler : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        Debug.Log(GameManager.levels[1]);
-    }
+    //private void Update()
+    //{
+    //    Debug.Log(GameManager.levels[1]);
+    //}
 
     public void saveData()
     {
         GameManager.saveDataToDisk();
+        print(GameManager.levels[1]);
+    }
+
+    public void loadData()
+    {
+        GameManager.loadDataToDisk();
+        print(GameManager.levels[1]);
     }
 }

@@ -13,7 +13,7 @@ static class GameManager
         {
             public int level = 0;
             public int highscore = 0;
-            public int[] levels = new int[10];
+            public bool[] levels = new bool[4];
         }
 
 
@@ -32,16 +32,13 @@ static class GameManager
         saveData = (SaveData)bf.Deserialize(file);
         file.Close();
 
-        //saveData.level = levels[] ;
+        levels = saveData.levels;
 
     }
         public static void saveDataToDisk()
         {
         //savedata object vullen met de gewenste data
-        for (int i = 0; i < levels.Length; i++)
-        {
-            saveData.level = i;
-        }
+        saveData.levels = levels;
 
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create("./gamesave.save");

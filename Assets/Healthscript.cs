@@ -11,6 +11,7 @@ public class Healthscript : MonoBehaviour
 
     private int life;
     private bool dead;
+    public bool killed;
 
     private void Start()
     {
@@ -20,11 +21,15 @@ public class Healthscript : MonoBehaviour
 
     private void Update()
     {
-    }
+        if (killed)
+        {
+            death("Death");
+        }
 
-    void OnCollisionEnter2D(Collision2D col)
+    }
+    void death(string tag)
     {
-        if (col.transform.CompareTag("Death"))
+        if (tag == "Death")
         {
             if (life >= 1)
             {
@@ -42,7 +47,14 @@ public class Healthscript : MonoBehaviour
         {
             Debug.Log("je bent dood");
         }
-
+        killed = false;
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.transform.CompareTag("Death"))
+        {
+            killed = true;
+        }
     }
 
 

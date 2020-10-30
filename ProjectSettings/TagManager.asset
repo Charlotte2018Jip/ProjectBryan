@@ -7,6 +7,8 @@ TagManager:
   - powerup
   - Button
   - Death
+  - Coin
+  - level0
   - Enemy
   layers:
   - Default

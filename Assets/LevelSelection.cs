@@ -12,7 +12,7 @@ public class LevelSelection : MonoBehaviour
     }
     public void gotolevel1()
     {
-        SceneManager.LoadScene("IntroScene");
+        SceneManager.LoadScene("0");
     }
 
     public void gotolevel2()
@@ -22,7 +22,7 @@ public class LevelSelection : MonoBehaviour
 
     public void gotolevel3()
     {
-        SceneManager.LoadScene("Lars");
+        SceneManager.LoadScene("2");
     }
 
 }

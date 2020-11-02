@@ -12,6 +12,8 @@ public class FinishHandler : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameManager.levels[level] = true;
+            GameManager.saveDataToDisk();
+            print(GameManager.levels[level]);
         }
     }
 
@@ -23,7 +25,7 @@ public class FinishHandler : MonoBehaviour
     public void saveData()
     {
         GameManager.saveDataToDisk();
-        print(GameManager.levels[1]);
+        print(GameManager.levels[level]);
     }
 
     public void loadData()

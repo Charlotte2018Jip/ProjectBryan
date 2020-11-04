@@ -3865,7 +3865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 2088474636}
-  killed: {fileID: 0}
+  killed: {fileID: 1280169421}
 --- !u!4 &762157181
 Transform:
   m_ObjectHideFlags: 0
